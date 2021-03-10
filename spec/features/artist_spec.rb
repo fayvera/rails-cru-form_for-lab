@@ -18,7 +18,7 @@ describe 'navigate artist pages' do
   it 'shows the bio on the show page in a p tag' do
     visit "/artists/#{@artist.id}"
     expect(page).to have_css("p", text: "My artist bio")
-  end
+  end 
 end
 
 describe 'artist form' do

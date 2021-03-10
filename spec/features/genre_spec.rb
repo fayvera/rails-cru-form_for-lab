@@ -8,7 +8,7 @@ describe 'navigate genre pages' do
   it 'shows the name on the show page in a h1 tag' do
     visit "/genres/#{@genre.id}"
     expect(page).to have_css("h1", text: "My Genre")
-  end
+  end 
 
   it 'to genre pages' do
     visit "/genres/#{@genre.id}"
